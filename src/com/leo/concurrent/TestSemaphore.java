@@ -26,10 +26,11 @@ public class TestSemaphore {
         public void run() { 
             try { 
                 semaphore.acquire(); 
-                System.out.println("¹¤ÈË"+this.num+"Õ¼ÓÃÒ»¸ö»úÆ÷ÔÚÉú²ú..."); 
+                System.out.println("å·¥äºº"+this.num+"å ç”¨ä¸€ä¸ªæœºå™¨åœ¨ç”Ÿäº§..."); 
                 Thread.sleep(2000); 
-                System.out.println("¹¤ÈË"+this.num+"ÊÍ·Å³ö»úÆ÷"); 
-                semaphore.release();             
+                System.out.println("å·¥äºº"+this.num+"é‡Šæ”¾å‡ºæœºå™¨"); 
+                semaphore.release();        
+                System.out.println("add from web"); 
             } catch (InterruptedException e) { 
                 e.printStackTrace(); 
             } 
