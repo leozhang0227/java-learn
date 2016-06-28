@@ -29,6 +29,7 @@ public class TestSemaphore1 {
 				Thread.sleep(2000);
 				System.out.println("The worker" + this.num +"release the machine");
 				semaphore.release();
+				System.out.println("test the git" + this.num +"git hub works ok");
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
